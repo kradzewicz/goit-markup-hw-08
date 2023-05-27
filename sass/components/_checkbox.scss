@@ -1,7 +1,11 @@
 .checkbox {
-  padding: 20px 14px 30px;
+  padding: 20px 0 31px;
   align-items: center;
   display: flex;
+
+  @include desktop {
+    padding: 20px 14px 30px;
+  }
 
   &__control {
     position: relative;

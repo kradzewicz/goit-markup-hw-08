@@ -1,9 +1,10 @@
 .nav-list {
-  display: flex;
+  display: none;
   justify-content: space-between;
   gap: 30px;
 
   &__link {
+    display: none;
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 14px;
@@ -17,14 +18,27 @@
     &:active::after {
       text-decoration: underline;
     }
+
+    @include tablet {
+      display: flex;
+    }
   }
 
-  li:nth-child(1) {
-    margin-left: 93px;
+  @include tablet {
+    li:nth-child(1) {
+      margin-left: 83px;
+    }
+    ul {
+      column-gap: 60px;
+    }
   }
-
-  ul {
-    column-gap: 46px;
+  @include desktop {
+    li:nth-child(1) {
+      margin-left: 93px;
+    }
+    ul {
+      column-gap: 46px;
+    }
   }
 
   &__underline {
@@ -40,5 +54,9 @@
       background: var(--first-special-colour);
       border-radius: 2px;
     }
+  }
+
+  @include tablet {
+    display: flex;
   }
 }

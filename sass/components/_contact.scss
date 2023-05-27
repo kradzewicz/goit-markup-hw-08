@@ -1,10 +1,9 @@
 .contact {
-  &__address {
-    color: white;
-    letter-spacing: 0.03em;
-    line-height: 171%;
-    font-size: 14px;
-    margin-top: 20px;
+  text-align: center;
+
+  @include desktop {
+    max-width: 247px;
+    text-align: left;
   }
 
   &__link {
@@ -12,6 +11,12 @@
     letter-spacing: 0.03em;
     line-height: 171%;
     font-size: 14px;
+    font-style: normal;
+
+    &--address {
+      color: white;
+      margin-top: 20px;
+    }
 
     &:hover,
     &:focus {

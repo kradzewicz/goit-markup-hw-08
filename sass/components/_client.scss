@@ -1,6 +1,7 @@
 .client {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 30px;
 
   &__box {
@@ -19,8 +20,18 @@
   }
 
   &__logo {
-    width: 170px;
-    height: 92px;
     fill: var(--fourth-special-colour);
+    max-width: 210px;
+    max-height: 92px;
+
+    @include tablet {
+      max-width: 226px;
+      max-height: 92px;
+    }
+
+    @include desktop {
+      max-width: 170px;
+      max-height: 92px;
+    }
   }
 }

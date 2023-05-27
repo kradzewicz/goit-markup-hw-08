@@ -3,11 +3,11 @@
   color: var(--first-special-colour);
   font-size: 26px;
 
-  &--dark span {
+  &--dark {
     color: black;
   }
 
-  &--light span {
+  &--light {
     color: white;
   }
 }

@@ -1,6 +1,6 @@
 header {
   background-color: white;
-  padding: 25px 0;
+  padding: 16px 0;
   border-bottom: 1px solid #ececec;
 
   .container,
@@ -13,5 +13,13 @@ header {
 
   ul {
     display: flex;
+  }
+
+  @include tablet {
+    padding: 21px 0;
+  }
+
+  @include desktop {
+    padding: 26px 0;
   }
 }

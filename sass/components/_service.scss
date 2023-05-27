@@ -1,18 +1,46 @@
 .service {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 
+  li {
+    max-width: 450px;
+    max-height: 226px;
+
+    @include tablet {
+      max-width: 354px;
+      max-height: 241px;
+    }
+
+    @include desktop {
+      max-width: 270px;
+      max-height: 251px;
+    }
+  }
+
+  &__img-box {
+    border-radius: 4px;
+    background-color: var(--third-background-colour);
+    text-align: center;
+    max-height: 120px;
+  }
   &__img {
-    width: 270px;
-    height: 120px;
+    padding: 25px 0;
+    max-width: 70px;
+    max-height: 70px;
   }
 
   &__header {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     margin: 30px 0 10px;
+
+    @include tablet {
+      text-align: left;
+    }
   }
 
   &__text {

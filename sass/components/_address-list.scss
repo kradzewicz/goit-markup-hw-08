@@ -1,5 +1,5 @@
 .address-list {
-  display: flex;
+  display: none;
   justify-content: space-between;
   column-gap: 30px;
 
@@ -29,5 +29,15 @@
   &__icon-smartphone {
     width: 10px;
     height: 16px;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  @include desktop {
+    flex-direction: row;
   }
 }

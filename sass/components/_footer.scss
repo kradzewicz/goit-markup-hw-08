@@ -4,7 +4,25 @@ footer {
 
   .container {
     display: flex;
+    flex-direction: column;
     column-gap: 70px;
+    row-gap: 60px;
+    align-items: center;
+    text-align: center;
+
+    @include tablet {
+      justify-content: space-around;
+      flex-direction: row;
+      column-gap: 144px;
+      flex-wrap: wrap;
+    }
+
+    @include desktop {
+      flex-wrap: nowrap;
+      text-align: left;
+      justify-content: space-between;
+      gap: 0;
+    }
   }
 
   h3 {

@@ -18,7 +18,7 @@
     <header>
       <div class="container">
         <nav class="nav-list">
-          <a href="index.html" class="main-logo main-logo--dark">Web<span>Studio</span></a>
+          <a href="index.html" class="main-logo">Web<span class="main-logo--dark">Studio</span></a>
           <ul>
             <li class="nav-list__underline">
               <a href="index.html" class="nav-list__link">Agencja</a>
@@ -47,6 +47,11 @@
             >
           </li>
         </ul>
+        <button class="menu-btn" js-open-menu type="button">
+          <svg class="menu-btn__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -60,9 +65,11 @@
         <div class="container">
           <ul class="service">
             <li>
-              <svg class="service__img">
-                <use href="./images/icons.svg#icon-Group-1"></use>
-              </svg>
+              <div class="service__img-box">
+                <svg class="service__img">
+                  <use href="./images/icons.svg#icon-Group-1"></use>
+                </svg>
+              </div>
               <h3 class="service__header">LOREM IPSUM</h3>
               <p class="service__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -70,9 +77,11 @@
               </p>
             </li>
             <li>
-              <svg class="service__img">
-                <use href="./images/icons.svg#icon-Group-2"></use>
-              </svg>
+              <div class="service__img-box">
+                <svg class="service__img">
+                  <use href="./images/icons.svg#icon-Group-2"></use>
+                </svg>
+              </div>
               <h3 class="service__header">LOREM IPSUM</h3>
               <p class="service__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -80,9 +89,11 @@
               </p>
             </li>
             <li>
-              <svg class="service__img">
-                <use href="./images/icons.svg#icon-Group-3"></use>
-              </svg>
+              <div class="service__img-box">
+                <svg class="service__img">
+                  <use href="./images/icons.svg#icon-Group-3"></use>
+                </svg>
+              </div>
               <h3 class="service__header">LOREM IPSUM</h3>
               <p class="service__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -90,9 +101,11 @@
               </p>
             </li>
             <li>
-              <svg class="service__img">
-                <use href="./images/icons.svg#icon-Group-4"></use>
-              </svg>
+              <div class="service__img-box">
+                <svg class="service__img">
+                  <use href="./images/icons.svg#icon-Group-4"></use>
+                </svg>
+              </div>
               <h3 class="service__header">LOREM IPSUM</h3>
               <p class="service__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -109,7 +122,7 @@
           <ul class="img-box">
             <li>
               <img
-                src="images/example_1.jpg"
+                src="images/example_1@1x.jpg"
                 alt="Pisanie kodu na klawiaturze"
                 width="370"
                 height="294"
@@ -118,7 +131,7 @@
             </li>
             <li class="img-box">
               <img
-                src="images/example_2.jpg"
+                src="images/example_2@1x.jpg"
                 alt="Wybieranie szablonu menu aplikacji"
                 width="370"
                 height="294"
@@ -127,7 +140,7 @@
             </li>
             <li class="img-box">
               <img
-                src="images/example_3.jpg"
+                src="images/example_3@1x.jpg"
                 alt="Oglądanie grafiki na tablecie"
                 width="370"
                 height="294"
@@ -142,7 +155,18 @@
           <h2 class="section__header">Nasz zespół</h2>
           <ul>
             <li class="team__card">
-              <img src="images/team_1.jpg" alt="Mężczyzna w okularach" width="270" height="260" />
+              <img
+                src="images/team_mobile_1@1x.jpg"
+                alt="Mężczyzna w okularach"
+                srcset=" 
+                images/team_mobile_1@2x 900w
+                images/team_tablet_1@1x 354w
+                images/team_tablet_1@2x 708w
+                images/team_desktop_1@1x 270w
+                images/team_desktop_1@2x 540w
+                "
+                sizes="(min-width: 768px) 354w, (min-width: 1200px) 270w, 100vw"
+              />
               <h3 class="team__name">John Doe</h3>
               <p class="team__description">Product Designer</p>
               <ul class="social-list">
@@ -177,7 +201,18 @@
               </ul>
             </li>
             <li class="team__card">
-              <img src="images/team_2.jpg" alt="Kobieta w okularach" width="270" height="260" />
+              <img
+                src="images/team_mobile_2@1x.jpg"
+                alt="Kobieta w okularach"
+                srcset=" 
+                images/team_mobile_2@2x 900w
+                images/team_tablet_2@1x 354w
+                images/team_tablet_2@2x 708w
+                images/team_desktop_2@1x 270w
+                images/team_desktop_2@2x 540w
+                "
+                sizes="(min-width: 768px) 354w, (min-width: 1200px) 270w, 100vw"
+              />
               <h3 class="team__name">John Doe</h3>
               <p class="team__description">Frontend Developer</p>
               <ul class="social-list">
@@ -212,7 +247,18 @@
               </ul>
             </li>
             <li class="team__card">
-              <img src="images/team_3.jpg" alt="Uśmiechnięty mężczyzna" width="270" height="260" />
+              <img
+                src="images/team_mobile_3@1x.jpg"
+                alt="Uśmiechnięty mężczyzna"
+                srcset=" 
+                images/team_mobile_3@2x 900w
+                images/team_tablet_3@1x 354w
+                images/team_tablet_3@2x 708w
+                images/team_desktop_3@1x 270w
+                images/team_desktop_3@2x 540w
+                "
+                sizes="(min-width: 768px) 354w, (min-width: 1200px) 270w, 100vw"
+              />
               <h3 class="team__name">John Doe</h3>
               <p class="team__description">Marketing</p>
               <ul class="social-list">
@@ -247,7 +293,18 @@
               </ul>
             </li>
             <li class="team__card">
-              <img src="images/team_4.jpg" alt="Mężczyzna w okularach" width="270" height="260" />
+              <img
+                src="images/team_mobile_4@1x.jpg"
+                alt="Mężczyzna w okularach"
+                srcset=" 
+                images/team_mobile_4@2x 900w
+                images/team_tablet_4@1x 354w
+                images/team_tablet_4@2x 708w
+                images/team_desktop_4@1x 270w
+                images/team_desktop_4@2x 540w
+                "
+                sizes="(min-width: 768px) 354w, (min-width: 1200px) 270w, 100vw"
+              />
               <h3 class="team__name">John Doe</h3>
               <p class="team__description">UI Manager</p>
               <ul class="social-list">
@@ -338,10 +395,14 @@
     <footer>
       <div class="container">
         <div>
-          <a href="index.html" class="main-logo main-logo--light">Web<span>Studio</span> </a>
+          <a href="index.html" class="main-logo"
+            >Web<span class="main-logo--light">Studio</span>
+          </a>
           <address class="contact">
             <ul>
-              <li class="contact__address">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="contact__link contact__link--address">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
               <li>
                 <a href="mailto:info@devstudio.com" class="contact__link">info@devstudio.com</a>
               </li>
@@ -455,6 +516,31 @@
         <button class="modal-window__submit-btn" type="submit">Wyślij</button>
       </div>
     </div>
+    <div js-menu-container class="is-hidden">
+      <div class="mobile-menu">
+        <button js-close-menu class="mobile-menu__close-btn" type="button">
+          <svg class="mobile-menu__icon-close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="nav-list">
+          <a href="index.html" class="nav-list__link">Agencja</a>
+          <a href="portfolio.html" class="nav-list__link">Portfolio</a>
+          <a href="#Contact" class="nav-list__link">Kontakt</a>
+        </div>
+        <div class="address-list">
+          <a href="tel:+48 111 111 111" class="address-list__link"> +48 111 111 111</a>
+          <a href="mailto:info@devstudio.com" class="address-list__link"> info@devstudio.com</a>
+        </div>
+        <div class="mobile-menu__social">
+          <a href="#" class="mobile-menu__link">Instagram</a>
+          <a href="#" class="mobile-menu__link">Twitter</a>
+          <a href="#" class="mobile-menu__link">Facebook</a>
+          <a href="#" class="mobile-menu__link">Linkedin</a>
+        </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
