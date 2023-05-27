@@ -1,0 +1,25 @@
+footer {
+  background-color: var(--second-background-colour);
+  padding: 60px 0;
+
+  .container {
+    display: flex;
+    column-gap: 70px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .social-list__link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .social-list__icon {
+    fill: white;
+  }
+}

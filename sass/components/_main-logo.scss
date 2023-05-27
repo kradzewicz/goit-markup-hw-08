@@ -1,0 +1,13 @@
+.main-logo {
+  font-family: var(--font-secondary);
+  color: var(--first-special-colour);
+  font-size: 26px;
+
+  &--dark span {
+    color: black;
+  }
+
+  &--light span {
+    color: white;
+  }
+}

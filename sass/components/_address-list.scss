@@ -1,0 +1,33 @@
+.address-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+
+  a {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__link {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: var(--second-special-colour);
+
+    &:hover,
+    &:focus {
+      color: var(--first-special-colour);
+    }
+  }
+
+  &__icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+
+  &__icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
+}

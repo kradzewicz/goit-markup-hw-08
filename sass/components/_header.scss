@@ -1,0 +1,17 @@
+header {
+  background-color: white;
+  padding: 25px 0;
+  border-bottom: 1px solid #ececec;
+
+  .container,
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  ul {
+    display: flex;
+  }
+}

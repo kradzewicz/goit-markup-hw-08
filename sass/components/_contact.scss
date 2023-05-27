@@ -1,0 +1,25 @@
+.contact {
+  &__address {
+    color: white;
+    letter-spacing: 0.03em;
+    line-height: 171%;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  &__link {
+    color: rgba(100%, 100%, 100%, 60%);
+    letter-spacing: 0.03em;
+    line-height: 171%;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+      color: var(--first-special-colour);
+    }
+  }
+
+  li:nth-child(2) {
+    margin: 9px 0;
+  }
+}

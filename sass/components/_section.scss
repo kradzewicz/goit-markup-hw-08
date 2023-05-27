@@ -1,0 +1,14 @@
+.section {
+  padding: 94px 0;
+
+  &__header {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &:nth-child(2) {
+    padding-bottom: 0;
+  }
+}

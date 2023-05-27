@@ -1,0 +1,47 @@
+.input-box {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  display: inline-flex;
+  padding: 12px 42px;
+  position: relative;
+  margin-bottom: 28px;
+
+  &__description {
+    position: absolute;
+    left: 0;
+    top: -18px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: var(--second-special-colour);
+  }
+
+  svg {
+    position: absolute;
+    left: 15px;
+    fill: var(--third-special-colour);
+  }
+
+  &__icon-name {
+    width: 12px;
+    height: 12px;
+  }
+
+  &__icon-phone {
+    width: 13px;
+    height: 13px;
+  }
+
+  &__icon-mail {
+    width: 15px;
+    height: 12px;
+  }
+
+  &:focus-within,
+  &:hover {
+    border-color: var(--first-special-colour);
+
+    svg {
+      fill: var(--first-special-colour);
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.modal-window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: white;
+  width: 528px;
+  height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  display: block;
+  box-sizing: border-box;
+  padding: 40px;
+
+  h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--third-special-colour);
+    margin-bottom: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  div {
+    p {
+      display: inline;
+      letter-spacing: 0.03em;
+      font-size: 14px;
+      line-height: 171%;
+    }
+    a {
+      color: var(--first-special-colour);
+      text-decoration: underline;
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+
+  &__icon-close {
+    width: 11px;
+    height: 11px;
+  }
+
+  &__submit-btn {
+    position: absolute;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0px;
+    border-radius: 4px;
+    background: var(--first-special-colour);
+    padding: 10px 76px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 188%;
+    left: 50%;
+    bottom: 40px;
+    color: white;
+    transform: translateX(-50%);
+  }
+
+  input:not(input[type='checkbox']) {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 12px;
+  }
+}

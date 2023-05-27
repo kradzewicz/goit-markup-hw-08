@@ -1,0 +1,26 @@
+.client {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  &__box {
+    display: block;
+    border: 1px solid var(--fourth-special-colour);
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--first-special-colour);
+
+      .client__logo {
+        fill: var(--first-special-colour);
+      }
+    }
+  }
+
+  &__logo {
+    width: 170px;
+    height: 92px;
+    fill: var(--fourth-special-colour);
+  }
+}
